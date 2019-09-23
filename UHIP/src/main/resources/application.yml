@@ -1,0 +1,40 @@
+#port number
+server:
+  port: 6363
+ #JPA AND HIBERNET CNF
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate: null
+      show_sql: true
+      dialect: org.hibernate.dialect.OracleDialect
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: TIGER
+    
+  #profile
+  profiles:
+    active:
+    - dev   
+  #logging
+logging:
+  level: 
+    org.springframework.web: ERROR
+    com.nj.gov.uhip: DEBUG
+  file: E://Project//UHIP
+  pattern:
+    dateformat:  "%d{yyyy-MM-dd HH:mm:ss}"
+#Application Property
+uhip:
+   uhipProperty:
+     regdsuccess: Registration Succcess
+     regdfailure: Registration Failed
+      
+
+    
+  
+    

@@ -1,0 +1,21 @@
+#View Resolver
+spring:
+  mvc:
+    view:
+      prefix: /Views/
+      suffix: .jsp
+ 
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: kunupradhan320@gmail.com
+    password: 9121480346
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
